@@ -1,64 +1,85 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #0f172a;
     color: #f1f5f9;
     line-height: 1.6;
 }
 
-header {
-    background-color: #1e293b;
-    padding: 40px 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background: linear-gradient(to right, #0ea5e9, #2563eb);
+    color: #fff;
+    padding: 60px 20px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.hero h1 {
     font-size: 3em;
 }
 
-header p {
-    margin: 10px 0 0;
+.hero p {
     font-size: 1.2em;
-    color: #94a3b8;
+    opacity: 0.9;
 }
 
 .intro {
-    padding: 40px 20px;
+    background-color: #1e293b;
+    padding: 50px 20px;
     text-align: center;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+.cards-section {
+    background-color: #0f172a;
+    padding: 60px 20px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
+    gap: 30px;
 }
 
 .card {
     background-color: #1e293b;
     border-radius: 12px;
-    padding: 20px;
-    width: 280px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .card h3 {
-    margin-top: 0;
     color: #38bdf8;
+    margin-bottom: 10px;
 }
 
 footer {
+    background-color: #1e293b;
     text-align: center;
     padding: 20px;
-    background-color: #0f172a;
-    border-top: 1px solid #334155;
-    font-size: 0.9em;
     color: #94a3b8;
+    font-size: 0.9em;
 }
