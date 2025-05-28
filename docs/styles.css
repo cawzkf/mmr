@@ -83,3 +83,7 @@ footer {
     color: #94a3b8;
     font-size: 0.9em;
 }
+.logo {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
