@@ -24,12 +24,28 @@ body {
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 3em;
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.hero p {
-    font-size: 1.2em;
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.titles h1 {
+    font-size: 2.8em;
+}
+
+.titles p {
+    font-size: 1.1em;
     opacity: 0.9;
 }
 
@@ -74,6 +90,11 @@ body {
 .card h3 {
     color: #38bdf8;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3em;
 }
 
 footer {
@@ -82,8 +103,4 @@ footer {
     padding: 20px;
     color: #94a3b8;
     font-size: 0.9em;
-}
-.logo {
-    max-width: 80px;
-    margin-bottom: 20px;
 }
