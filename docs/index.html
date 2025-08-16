@@ -1,55 +1,262 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FMM Robotics</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube de Robótica</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <div class="logo-container">
-                <img src="1687911434719.jfif" alt="Logo Machline" class="logo" />
-                <div class="titles">
-                    <h1>FMM Robotics</h1>
-                    <p>Clube de Robótica da Faculdade Matias Machline</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="bi bi-cpu-fill"></i>
+                <span>Clube de Robótica</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="circuit-pattern"></div>
+            <div class="floating-elements">
+                <div class="floating-icon" style="--delay: 0s;"><i class="bi bi-gear-fill"></i></div>
+                <div class="floating-icon" style="--delay: 1s;"><i class="bi bi-cpu"></i></div>
+                <div class="floating-icon" style="--delay: 2s;"><i class="bi bi-lightning-fill"></i></div>
+                <div class="floating-icon" style="--delay: 0.5s;"><i class="bi bi-robot"></i></div>
+                <div class="floating-icon" style="--delay: 1.5s;"><i class="bi bi-tools"></i></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Clube de</span>
+                <span class="title-highlight">Robótica</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                [Descrição do clube]
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn btn-primary">
+                    <i class="bi bi-rocket-takeoff"></i>
+                    <span>Ver Projetos</span>
+                </a>
+                <a href="#sobre" class="btn btn-secondary">
+                    <i class="bi bi-arrow-down-circle"></i>
+                    <span>Saiba Mais</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-robot">
+            <div class="robot-container">
+                <div class="robot-head">
+                    <div class="robot-eye left"></div>
+                    <div class="robot-eye right"></div>
+                </div>
+                <div class="robot-body">
+                    <div class="robot-light"></div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="intro">
-            <div class="container">
-                <h2>Bem-vindo!</h2>
-                <p>Somos apaixonados por tecnologia, inovação e desafios. Nosso clube desenvolve projetos de automação, programação e robótica aplicada.</p>
-            </div>
-        </section>
-
-        <section class="cards-section">
-            <div class="container cards">
-                <div class="card">
-                    <h3><i class="bi bi-rocket-takeoff"></i> Projetos</h3>
-                         <p>Nosso primeiro projeto será um <strong>robô equilibrista</strong>, que se mantém de pé sobre duas rodas usando sensores e controle inteligente.</p>               
-                </div>
-                <div class="card">
-                    <h3><i class="bi bi-people-fill"></i> Equipe</h3>
-                    <p>Formada por estudantes curiosos, criativos e cheios de energia para aprender e compartilhar.</p>
-                </div>
-                <div class="card">
-                    <h3><i class="bi bi-award"></i> Eventos</h3>
-                    <p>Participamos de olimpíadas de robótica, feiras de ciências e competições nacionais.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <section class="features" id="sobre">
         <div class="container">
-            <p><i class="bi bi-c-circle"></i> 2025 FMM Robotics • Todos os direitos reservados</p>
+            <div class="section-header">
+                <h2 class="section-title">[Título da Seção]</h2>
+                <p class="section-subtitle">[Subtítulo da seção]</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-lightbulb-fill"></i>
+                    </div>
+                    <h3>[Título do Card]</h3>
+                    <p>[Descrição do card]</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h3>[Título do Card]</h3>
+                    <p>[Descrição do card]</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <h3>[Título do Card]</h3>
+                    <p>[Descrição do card]</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+                    <h3>[Título do Card]</h3>
+                    <p>[Descrição do card]</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <h3>[Título do Card]</h3>
+                    <p>[Descrição do card]</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+                    </div>
+                    <h3>[Título do Card]</h3>
+                    <p>[Descrição do card]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projetos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">[Título dos Projetos]</h2>
+                <p class="section-subtitle">[Subtítulo dos projetos]</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-tech-icons">
+                            <i class="bi bi-cpu"></i>
+                            <i class="bi bi-gear"></i>
+                            <i class="bi bi-lightning"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">[Status]</div>
+                        <h3>[Nome do Projeto]</h3>
+                        <p>[Descrição do projeto]</p>
+                        <div class="project-tech">
+                            <span>[Tecnologia]</span>
+                            <span>[Tecnologia]</span>
+                            <span>[Tecnologia]</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tech-icons">
+                            <i class="bi bi-robot"></i>
+                            <i class="bi bi-camera"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">[Status]</div>
+                        <h3>[Nome do Projeto]</h3>
+                        <p>[Descrição do projeto]</p>
+                        <div class="project-tech">
+                            <span>[Tecnologia]</span>
+                            <span>[Tecnologia]</span>
+                            <span>[Tecnologia]</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tech-icons">
+                            <i class="bi bi-wifi"></i>
+                            <i class="bi bi-house"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">[Status]</div>
+                        <h3>[Nome do Projeto]</h3>
+                        <p>[Descrição do projeto]</p>
+                        <div class="project-tech">
+                            <span>[Tecnologia]</span>
+                            <span>[Tecnologia]</span>
+                            <span>[Tecnologia]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>[Título Call to Action]</h2>
+                <p>[Descrição do CTA]</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi bi-plus-circle"></i>
+                        <span>[Texto do Botão]</span>
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="bi bi-envelope"></i>
+                        <span>[Texto do Botão]</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="bi bi-cpu-fill"></i>
+                        <span>Clube de Robótica</span>
+                    </div>
+                    <p>[Descrição do footer]</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy;[Footer]</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
